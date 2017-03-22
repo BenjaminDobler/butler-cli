@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/butler-cli.iml" filepath="$PROJECT_DIR$/.idea/butler-cli.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/shift-cli.iml" filepath="$PROJECT_DIR$/.idea/shift-cli.iml" />
     </modules>
   </component>
