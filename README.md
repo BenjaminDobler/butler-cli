@@ -1,13 +1,29 @@
 # butler-cli
-cli for angular-seed
+A cli tool for angular-seed
+
+# Installation
+
+```
+npm install BenjaminDobler/butler-cli
+```
 
 # Commands
+```
 butler install
+```
 
-butler add electron
-
+```
 butler start
+```
 
+```
+butler add electron
+```
+
+```
 butler start electron
+```
 
+```
 butler add electron-starter
+```
