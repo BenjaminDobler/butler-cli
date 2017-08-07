@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27cb4316-3f7c-4617-b906-0992da6ca355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cli.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/butler.js" afterPath="$PROJECT_DIR$/bin/butler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,8 +39,18 @@
       <file leaf-file-name="butler.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/butler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="526">
+              <caret line="385" column="9" lean-forward="false" selection-start-line="385" selection-start-column="9" selection-end-line="385" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cli.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cli.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,6 +88,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>startCl</find>
+      <find>startEle</find>
+      <find>builder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,6 +100,7 @@
       <list>
         <option value="$PROJECT_DIR$/bin/shift.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/lib/cli.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/butler.js" />
         <option value="$PROJECT_DIR$/bin/butler.js" />
@@ -106,9 +119,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="978" />
+    <option name="x" value="51" />
+    <option name="y" value="24" />
+    <option name="width" value="1869" />
+    <option name="height" value="1127" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -125,12 +139,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shift-cli" />
+              <option name="myItemId" value="butler-cli" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -140,7 +153,21 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shift-cli" />
+              <option name="myItemId" value="butler-cli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="butler-cli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="butler-cli" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -155,6 +182,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,23 +292,35 @@
       <workItem from="1490170762727" duration="5705000" />
       <workItem from="1490178516202" duration="5607000" />
       <workItem from="1490193942534" duration="428000" />
+      <workItem from="1490383120531" duration="24000" />
+      <workItem from="1490383162395" duration="6248000" />
+      <workItem from="1490768764420" duration="124000" />
+      <workItem from="1491086516090" duration="57000" />
+      <workItem from="1493448248681" duration="461000" />
+      <workItem from="1493571943207" duration="488000" />
+      <workItem from="1494626166323" duration="60000" />
+      <workItem from="1495310118954" duration="1084000" />
+      <workItem from="1497710642372" duration="290000" />
+      <workItem from="1497810125116" duration="238000" />
+      <workItem from="1498057566905" duration="550000" />
+      <workItem from="1498372472792" duration="36000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18745000" />
+    <option name="totallyTimeSpent" value="28405000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="978" extended-state="0" />
+    <frame x="51" y="24" width="1869" height="1127" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28450873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25054112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2937198" sideWeight="0.5248918" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18961625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2937198" sideWeight="0.47510824" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -294,6 +334,215 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/system-config.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/main-prod.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/main.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/operators.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/operators.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/i18n.providers.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/main.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/app.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/shared.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/shared.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/shared.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/pipes/duration.pipe.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/pipes/duration.pipe.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/config/env.config.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/config/env.config.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/navbar/navbar.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/toolbar/toolbar.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/toolbar/toolbar.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/toolbar/toolbar.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/toolbar/toolbar.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/screenshot.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/time.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/screenshot.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/time.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/persistence.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/services/persistence.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/name-list/name-list.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/name-list/name-list.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/animations/fade.animations.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/animations/fade.animations.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/environment/env.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/environment/env.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/code-example/code-example.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skinClass.directive.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skins.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skin.directive.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skin.directive.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skin-manager.service.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skin-manager.service.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skinClass.directive.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skingroup-type-enum.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skingroup-type-enum.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/shared/skin-manager/skins.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/rsi/rsi.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/list/list.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/skin/skin.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/about/about.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/touch/touch.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/widgets/widgets.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/electron/electron-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/language/language.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen-routing.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.component.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen-routing.module.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen-routing.module.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/components/homescreen/homescreen.component.js.map" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/core/core.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/http/http.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/forms/forms.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/common/common.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/router/router.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/platform-browser/platform-browser.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@ngx-translate/core/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/ng2-validators/src/validators.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.rsiservices/dist/rsi.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/platform-browser/animations/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/pan-gestures/pan-gesture.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/tap-gestures/tap-gesture.modul.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/drag-gestures/drag-gestures.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/pinch-gestures/pinch-gesture.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/press-gestures/press-gesture.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.gestures/dist/rubberband-gestures/rubberband.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/platform-browser/animations/src/providers.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/@angular/platform-browser/animations/src/animation_renderer.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/list/list.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/list/item.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/list/item.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/list/list.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/list/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/range/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/range/range.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/range/range.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/avatar/avatar.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/avatar/avatar.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/avatar/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/button/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/button/button.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/button/button.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/scroll/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/switch/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/switch/switch.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/switch/switch.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/overlay/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/overlay/overlay.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/overlay/overlay.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/dropdown/dropdown.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/dropdown/dropdown.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/dropdown/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/virtual-scroll-list/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/virtual-scroll-list/virtual-scroll-list.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/virtual-scroll-list/virtual-scroll-list.component.css.shim.ngstyle.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/pwd-strength-indicator/pwd-strength-indicator-container.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/pwd-strength-indicator/pwd-strength-indicator.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/pwd-strength-indicator/index.ngfactory.js" />
+        <option value="$PROJECT_DIR$/../cq/cq.shift.ng2seed/dist/tmp/node_modules/cq.shift.ui-components/dist/cq.shift.ui-components/pwd-strength-indicator/pwd-strength-indicator.component.css.shim.ngstyle.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -303,6 +552,206 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="206" column="9" lean-forward="false" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/download-git-repo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4605">
+          <caret line="307" column="0" lean-forward="true" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/download-git-repo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/download-git-repo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/download-git-repo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/download-git-repo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/butler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -453,8 +902,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -469,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/butler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="526">
+          <caret line="385" column="9" lean-forward="false" selection-start-line="385" selection-start-column="9" selection-end-line="385" selection-end-column="9" />
           <folding />
         </state>
       </provider>

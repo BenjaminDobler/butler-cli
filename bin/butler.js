@@ -6,6 +6,9 @@ var sh = require("shelljs");
 var cwd = sh.pwd();
 var download = require('download-git-repo');
 const fs = require('fs-extra');
+var packager = require('electron-packager');
+//const builder = require("electron-builder")
+//const Platform = builder.Platform
 
 var Q = require('q');
 
@@ -28,7 +31,7 @@ try {
     if (configString) {
         config = JSON.parse(configString);
     }
-}catch(e) {
+} catch (e) {
 
 }
 
@@ -44,22 +47,28 @@ program
     .option('-s, --start', 'Start App')
     .option('-a, --add [target]', 'Add target/kits')
     .option('-m, --mode [target]', 'Add target/kits')
+    .option('-h, --hello [target]', 'Add target/kits')
+    .option('-p, --package [target]', 'Add target/kits')
     .parse(process.argv);
 
 
+if (program.hello) {
+    log('hello');
+}
+
 if (program.init) {
-    log("Installing seed for you at " + cwd);
+    log("Installing seed for you at directiry " + cwd);
     projectName = program.init[0];
     if (config.mode === 'seed') {
         initSeed();
-    } else if(config.mode === 'cli') {
+    } else if (config.mode === 'cli') {
         initCli();
     }
 }
 
 
 if (program.start) {
-    console.log("::::: BUTLER says: 'Programm start ", program.start)
+    console.log("::::: BUTLER says: 'Programm start !", program.start)
     if (program.start.length === 0) {
         start();
     } else if (program.start[0] === 'electron') {
@@ -69,9 +78,13 @@ if (program.start) {
 }
 
 
+if (program.package) {
+    packageElectron()
+}
 
 
 function start() {
+    console.log("Start ", config.mode);
     if (config.mode === 'seed') {
         return startSeed()
     } else {
@@ -80,14 +93,8 @@ function start() {
 }
 
 function startElectron() {
-
+    console.log("Start electron");
 }
-
-
-
-
-
-
 
 
 if (program.add) {
@@ -117,7 +124,6 @@ if (program.mode) {
 }
 
 
-
 function initSeed() {
     createProjectDir()
         .then(downloadSeed)
@@ -129,7 +135,7 @@ function initSeed() {
 
 function createProjectDir() {
     var deferred = Q.defer();
-    fs.mkdirSync(process.cwd()+'/' + projectName, 0744);
+    fs.mkdirSync(process.cwd() + '/' + projectName, 0744);
     deferred.resolve();
     return deferred.promise;
 }
@@ -141,7 +147,7 @@ function initCli() {
 
 function changeToWs() {
     var deferred = Q.defer();
-    process.chdir(process.cwd()+'/' + projectName);
+    process.chdir(process.cwd() + '/' + projectName);
     deferred.resolve();
     return deferred.promise;
 }
@@ -165,7 +171,6 @@ function setupCliProject() {
     });
     return deferred.promise;
 }
-
 
 
 function downloadSeed() {
@@ -231,7 +236,7 @@ function installSeedDependencies() {
 
 
 function startSeed() {
-    console.log("::::: Start Seed");
+    console.log("::::: Start Seed!!!");
     var deferred = Q.defer();
     var ls = spawn('npm', ['run', 'start']);
     ls.stdout.on('data', function (data) {
@@ -255,12 +260,12 @@ function startSeed() {
 
 
 function startCli() {
-    console.log("::::: Start Seed");
+    console.log("::::: Start CLI");
     var deferred = Q.defer();
     var ls = spawn('ng', ['serve']);
     ls.stdout.on('data', function (data) {
-        log('stdout: ' + data.toString(), true);
-        if (data.toString().indexOf('Serving files from') != -1) {
+        log('cli stdout: ' + data.toString(), true);
+        if (data.toString().indexOf('Compiled successfully') != -1) {
             deferred.resolve();
         }
     });
@@ -279,9 +284,10 @@ function startCli() {
 
 
 function electronWatch() {
-    console.log("::::: Start Seed");
+    console.log("::::: Electron Watch");
+    var nodeModulesPath = cwd.toString() + '/electron/src/node_modules';
     var deferred = Q.defer();
-    var ls = spawn('electron', ['electron/src/electron.main.live.js']);
+    var ls = spawn('electron', ['electron/src/electron.main.live.js', '-port', 4200, '-nodeModules', nodeModulesPath]);
     ls.stdout.on('data', function (data) {
         log(data.toString(), true);
     });
@@ -347,6 +353,39 @@ function printProgress(progress) {
     process.stdout.write(progress + '%');
 }
 
+
+function build() {
+    if (config.mode === 'cli') {
+        buildCli().then(packageElectron);
+    }
+}
+
+function buildCli() {
+    console.log("::::: Start CLI");
+    var deferred = Q.defer();
+    var ls = spawn('ng', ['build']);
+    ls.stdout.on('data', function (data) {
+        log('cli stdout: ' + data.toString(), true);
+    });
+
+    ls.stderr.on('data', function (data) {
+        log('stderr: ' + data.toString());
+    });
+
+
+    ls.on('exit', function (code) {
+        log('child process exited with code ' + code.toString());
+        deferred.resolve();
+
+    });
+    return deferred.promise;
+
+}
+
+
+function packageElectron() {
+
+}
 
 
 
