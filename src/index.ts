@@ -41,7 +41,7 @@ class Butler {
     }
 
     private initProject() {
-        console.log('Butler says: "Let`s create a angular project! Should be fun!"');
+        console.log('Butler says: "Let`s create an angular project! Should be fun!"');
         this.cli.initProject(commander.new[0]);
     }
 
