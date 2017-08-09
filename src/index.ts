@@ -15,14 +15,15 @@ class Butler {
     constructor() {
 
         console.log('Butler says: "I`m your butler! Happy to serve you!"');
-        console.log('===================================');
+        console.log('===================================================');
 
         commander
             .version('1.0.1')
             .option('-m, mode [name]', 'Change mode (cli or seed)')
-            .option('-m, new [name]', 'Create a new project')
-            .option('-m, add [name]', 'Add an addon')
-            .option('-m, serve [name]', 'Serve the app')
+            .option('-n, new [name]', 'Create a new project')
+            .option('-a, add [name]', 'Add an addon')
+            .option('-s, serve [name]', 'Serve the app')
+            .option('-b, build [name]', 'Build the app')
             .parse(process.argv);
 
 
@@ -30,19 +31,22 @@ class Butler {
         if (commander.new) this.initProject();
         if (commander.add) this.addAddon();
         if (commander.serve) this.serveApp();
+        if (commander.build) this.buildApp();
 
-
-        console.log("Args ", commander.args);
     }
 
     private setMode() {
-        this.config.data.mode = commander.mode[0];
+        console.log('Mode = ', commander.mode);
+        this.config.data.mode = commander.mode;
         this.config.writeConfig();
     }
 
     private initProject() {
         console.log('Butler says: "Let`s create an angular project! Should be fun!"');
-        this.cli.initProject(commander.new[0]);
+        console.log('Project Name = ', commander.new);
+        this.cli.new(commander.new).then(()=>{
+            process.chdir(process.cwd() + '/' + commander.new);
+        });
     }
 
     private addAddon() {
@@ -50,19 +54,27 @@ class Butler {
     }
 
     private serveApp() {
-        this.cli.startCli()
-            .then((cliProcess)=>{
-                return this.electronAddon.electronWatch();
+        this.cli.serve()
+            .then((cliProcess) => {
+                if (commander.serve === 'electron') {
+                    return this.electronAddon.electronWatch();
+                }
             })
+    }
 
-
-        //this.electronAddon.electronWatch();
+    private buildApp() {
+        console.log('Build!');
+        this.cli.build().then(() => {
+            console.log('CLI Budone');
+            if (commander.build === 'electron') {
+                this.electronAddon.build();
+            }
+        });
     }
 
     public cleanup() {
         this.cli.cleanup();
     }
-
 
 }
 
@@ -70,10 +82,12 @@ class Butler {
 let butler = new Butler();
 
 
-var cleanExit = function() { process.exit() };
+var cleanExit = function () {
+    process.exit()
+};
 process.on('SIGINT', cleanExit); // catch ctrl-c
 process.on('SIGTERM', cleanExit); // catch kill
 
-process.on('exit', function() {
+process.on('exit', function () {
     butler.cleanup();
 });
