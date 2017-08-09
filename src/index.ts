@@ -14,14 +14,15 @@ class Butler {
 
     constructor() {
 
-        console.log('Butler started - mode = ' + this.config.data.mode);
+        console.log('Butler says: "I`m your butler! Happy to serve you!"');
+        console.log('===================================');
 
         commander
             .version('1.0.1')
-            .option('-m, --mode [name]', 'Change mode (cli or seed)')
-            .option('-m, --new [name]', 'Create a new project')
-            .option('-m, --add [name]', 'Add an addon')
-            .option('-m, --serve [name]', 'Serve the app')
+            .option('-m, mode [name]', 'Change mode (cli or seed)')
+            .option('-m, new [name]', 'Create a new project')
+            .option('-m, add [name]', 'Add an addon')
+            .option('-m, serve [name]', 'Serve the app')
             .parse(process.argv);
 
 
@@ -29,6 +30,9 @@ class Butler {
         if (commander.new) this.initProject();
         if (commander.add) this.addAddon();
         if (commander.serve) this.serveApp();
+
+
+        console.log("Args ", commander.args);
     }
 
     private setMode() {
@@ -37,6 +41,7 @@ class Butler {
     }
 
     private initProject() {
+        console.log('Butler says: "Let`s create a angular project! Should be fun!"');
         this.cli.initProject(commander.new[0]);
     }
 
@@ -45,11 +50,11 @@ class Butler {
     }
 
     private serveApp() {
-
         this.cli.startCli()
             .then((cliProcess)=>{
                 return this.electronAddon.electronWatch();
             })
+
 
         //this.electronAddon.electronWatch();
     }

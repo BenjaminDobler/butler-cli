@@ -6,7 +6,7 @@ export class Cli {
 
     initProject(projectName: string) {
         return new Promise((resolve, reject) => {
-            var ls: ChildProcess = spawn('ng', ['new', projectName]);
+            var ls: ChildProcess = spawn('ng', ['new', projectName], { shell: true });
             ls.stdout.on('data', function (data) {
                 console.log('stdout: ' + data.toString(), true);
             });
@@ -27,7 +27,7 @@ export class Cli {
     public startCli(): Promise<ChildProcess> {
         console.log('::::: Start CLI');
         return new Promise((resolve, reject) => {
-            this.cliProcess = spawn('ng', ['serve']);
+            this.cliProcess = spawn('ng', ['serve'],{ shell: true });
             this.cliProcess.stdout.on('data', function (data) {
                 console.log('cli stdout: ' + data.toString(), true);
                 if (data.toString().indexOf('Compiled successfully') != -1) {

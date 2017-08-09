@@ -76,7 +76,13 @@ export class ElectronAddon {
         console.log("::::: Electron Watch");
         var nodeModulesPath = process.cwd.toString() + '/electron/src/node_modules';
         return new Promise((resolve, reject)=>{
-            var ls = spawn('./node_modules/.bin/electron', ['electron/electron.main.live.js', '-port', 4200+'', '-nodeModules', nodeModulesPath]);
+            let isMac = /^darwin/.test(process.platform);
+            let ls;
+            if (isMac) {
+                ls = spawn('./node_modules/.bin/electron', ['electron/electron.main.live.js', '-port', 4200 + '', '-nodeModules', nodeModulesPath]);
+            } else {
+                ls = spawn('node_modules/electron/dist/electron', ['electron/electron.main.live.js', '-port', 4200+'', '-nodeModules', nodeModulesPath]);
+            }
             ls.stdout.on('data', function (data) {
                 console.log(data.toString(), true);
             });
