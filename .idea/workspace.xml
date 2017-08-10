@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27cb4316-3f7c-4617-b906-0992da6ca355" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cli.js" afterPath="$PROJECT_DIR$/lib/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/electron.js" afterPath="$PROJECT_DIR$/lib/electron.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/index.js" afterPath="$PROJECT_DIR$/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cli.ts" afterPath="$PROJECT_DIR$/src/cli.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/electron.ts" afterPath="$PROJECT_DIR$/src/electron.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.ts" afterPath="$PROJECT_DIR$/src/index.ts" />
-    </list>
+    <list default="true" id="27cb4316-3f7c-4617-b906-0992da6ca355" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,8 +24,8 @@
       <file leaf-file-name="index.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="374">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="e#23#62#0" expanded="true" />
               </folding>
@@ -90,10 +81,10 @@
             <state relative-caret-position="255">
               <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding>
-                <marker date="1502293546307" expanded="true" signature="268:1389" ph="{...}" />
-                <marker date="1502293546307" expanded="true" signature="292:1181" ph="{...}" />
-                <marker date="1502293546307" expanded="true" signature="1225:1318" ph="{...}" />
-                <marker date="1502293546307" expanded="true" signature="1367:1389" ph="{...}" />
+                <marker date="1502293550608" expanded="true" signature="268:1389" ph="{...}" />
+                <marker date="1502293550608" expanded="true" signature="292:1181" ph="{...}" />
+                <marker date="1502293550608" expanded="true" signature="1225:1318" ph="{...}" />
+                <marker date="1502293550608" expanded="true" signature="1367:1389" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -215,7 +206,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="113" />
+    <option name="x" value="51" />
     <option name="y" value="14" />
     <option name="width" value="1869" />
     <option name="height" value="1127" />
@@ -404,15 +395,15 @@
       <workItem from="1502133179559" duration="7923000" />
       <workItem from="1502215287033" duration="1119000" />
       <workItem from="1502216600209" duration="153000" />
-      <workItem from="1502290979234" duration="2570000" />
+      <workItem from="1502290979234" duration="3333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40170000" />
+    <option name="totallyTimeSpent" value="40933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="14" width="1869" height="1127" extended-state="0" />
+    <frame x="51" y="14" width="1869" height="1127" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286432" sideWeight="0.48279628" order="7" side_tool="false" content_ui="tabs" />
@@ -790,10 +781,10 @@
         <state relative-caret-position="255">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <marker date="1502293546307" expanded="true" signature="268:1389" ph="{...}" />
-            <marker date="1502293546307" expanded="true" signature="292:1181" ph="{...}" />
-            <marker date="1502293546307" expanded="true" signature="1225:1318" ph="{...}" />
-            <marker date="1502293546307" expanded="true" signature="1367:1389" ph="{...}" />
+            <marker date="1502293550608" expanded="true" signature="268:1389" ph="{...}" />
+            <marker date="1502293550608" expanded="true" signature="292:1181" ph="{...}" />
+            <marker date="1502293550608" expanded="true" signature="1225:1318" ph="{...}" />
+            <marker date="1502293550608" expanded="true" signature="1367:1389" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -818,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="374">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="e#23#62#0" expanded="true" />
           </folding>
