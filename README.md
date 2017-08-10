@@ -1,13 +1,17 @@
 # butler-cli
-cli for angular-seed
+cli for building electon apps with the angular cli
+
+
 
 # Commands
-butler install
+butler new <project name>
 
 butler add electron
 
-butler start
+butler serve
 
-butler start electron
+butler serve electron
 
-butler add electron-starter
+butler build
+
+butler build electron
